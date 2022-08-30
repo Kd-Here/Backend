@@ -1,0 +1,10 @@
+Here we are using vim to create a file 
+just type vim dele.txt which means vim and file name
+after that 
+~
+~
+~
+~ 
+will arise just type I to insert and typw
+once did all typing press esc and :wq to save and exit
+File create by Kd
