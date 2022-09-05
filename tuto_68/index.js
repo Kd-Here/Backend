@@ -15,4 +15,10 @@ console.log("This is bocx of a ",a);  // This will show you [Function: avera]
 
 const avera = require('./mod.js');
 console.log(avera);
-console.log(avera([2,5,6]));
+// console.log(avera([2,5,6]));
+
+
+// When createed object of export  called them using obj . key of dictionary
+// const mo = require("./mod.js");
+// console.log(mo.aveg([2,5,7]));
+// console.log(mo.rrr);

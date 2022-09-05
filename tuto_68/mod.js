@@ -19,5 +19,7 @@ module.exports = avera;
 
 // if you wanted to create obj of moudle export
 module.exports = {
-    name : "kd"
+    name : "kd",
+    aveg : avera,
+    rrr : "KGF"
 }
