@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#{titile}</title>
+    <title>#{title}</title>
 
     style
         include ../static/style.css
@@ -21,7 +21,7 @@
     </nav>
     <div class="container"> 
         <h1>Get this gym membership for 60$</h1>
-        <form action="/" id="contact">
+        <form action="/" method="POST" id="contact">
             <input type="text" name="name" id="name" autocomplete="off" placeholder="Hi we are welcoming you for joining GYM membership feel free to contact us" >
             <input type="text" name="age" id="age"autocomplete="off" placeholder="Enter your age">
             <input type="text" name="gender" id="gender" autocomplete="off" placeholder="Enter your gender">
@@ -32,9 +32,8 @@
         <p>
             | #{info}    
             <!-- This is para  | here pipe is used to separate content idtentation-->
-        
         </p>
-
+ 
 </div>
 
 

@@ -67,6 +67,8 @@ input,textarea{
     outline: none;
     border: 2px solid black ;
     border-radius: 4px;
+    text-align: center; 
+
 }
 input::placeholder{
     color: violet;
@@ -94,5 +96,12 @@ button{
     border: 2px solid black;
     border-radius: 4px;
     cursor: pointer;
+    padding: 8px;
     outline: none;
+}
+.btn:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
 }
