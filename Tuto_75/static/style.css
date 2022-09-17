@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    background-color: yellowgreen;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: black ;
+}
+li{
+    margin: auto;
+    width: 100px;
+    /* display:inline-block; */
+  justify-content: center;
+  cursor: pointer;
+  height: 40px;
+  padding-top: 2px;
+  text-align: center;
+}
+li a{
+    font-size: larger;
+    color: aqua;
+}
+
+#intro{
+    height: 600px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-weight: bolder;
+    font-size: 2rem;
+    background: center / cover no-repeat url("/static/bg1.jpg");
+}
+#mitor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 399px;
+    background-color: red;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 399px;
+    background-color: rgb(30, 114, 170);
+}

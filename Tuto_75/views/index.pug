@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Travel with Us
+    script(src="https://cdn.tailwindcss.com")
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul.flex-container
+          each val in ["Home", "About Us", "Travel Plans", "Planets"]
+            // #[] this is called tag interpolation check in docs
+            li #[a(href="/") #{val}] 
+
+
+
+    section#intro
+        p Travel with us create good memory
+        p Which will stay with you ever
+
+
+    section#mitor
+        | section for Maps
+
+    footer#footer
+        | footer
+
+
+
+
+    h1 My Site
+    p Welcome to my super lame site.
+    script
+      include ../static/index.js
