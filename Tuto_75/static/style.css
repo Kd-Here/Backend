@@ -29,7 +29,7 @@ li a{
 }
 
 #intro{
-    height: 600px;
+    height: 689px;
     opacity: 0.8;
     display: flex;
     justify-content: center;
@@ -40,13 +40,16 @@ li a{
     font-size: 2rem;
     background: center / cover no-repeat url("/static/bg1.jpg");
 }
-#mitor{
-    display: flex;
+/* #mitor{
+    text-align: center;
     justify-content: center;
     align-items: center;
-    height: 399px;
-    background-color: red;
+    height: 500px;
+    background-color: black;
 }
+#mitor h1{
+    text-align: center;
+} */
 #footer{
     display: flex;
     justify-content: center;
@@ -54,3 +57,48 @@ li a{
     height: 399px;
     background-color: rgb(30, 114, 170);
 }
+
+
+
+
+/* #container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: bisque;
+    
+}
+
+
+
+.cards{
+    flex: 0 0 200px;
+    border: 3px solid #edf8ff;
+    padding: 8px;
+    border-radius: 2px;
+}*/
+
+#Mitro{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    height: 500px;
+}
+h3{
+    font-size: xx-large;
+    text-align: center;
+}
+.card{
+    width: 380px;
+    color: indigo;
+    background-color: aqua;
+    display: inline-block;
+    height: 420px;
+    margin: 30px;
+    border: 32px solid black;
+}
+.mage{
+    margin: auto;
+    padding: 3px;
+    border-radius: 22px; 
+} 
