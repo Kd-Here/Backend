@@ -2,6 +2,14 @@
 *{
     font-family: 'Oswald', sans-serif;
 }
+
+   
+#logo img{
+    filter: invert(1);
+    height: 50px;
+     width: 60px;
+}
+
 h1{
     background-color: yellowgreen;
     
@@ -12,6 +20,7 @@ h1{
     flex-wrap: nowrap;
     justify-content: center;
     background-color: black ;
+    height: 50px;
 }
 li{
     margin: auto;
@@ -20,7 +29,7 @@ li{
   justify-content: center;
   cursor: pointer;
   height: 40px;
-  padding-top: 2px;
+  padding-top: 6px;
   text-align: center;
 }
 li a{
@@ -40,6 +49,15 @@ li a{
     font-size: 2rem;
     background: center / cover no-repeat url("/static/bg1.jpg");
 }
+button#fir{
+    border: 2px solid red;
+    margin: 10px 40px 0px 0px;
+
+}
+button#sec{
+    border: 2px solid blueviolet;
+}
+
 /* #mitor{
     text-align: center;
     justify-content: center;

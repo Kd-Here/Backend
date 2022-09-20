@@ -8,6 +8,8 @@ html
   body
     nav#navbar
         ul.flex-container
+          div#logo
+              img(src='/static/logo2.png')
           each val in ["Home", "About Us", "Travel Plans", "Planets"]
             // #[] this is called tag interpolation check in docs
             li #[a(href="/") #{val}] 
@@ -25,14 +27,26 @@ html
           p 
           | Visit Lake
           img.mage(src="https://images.unsplash.com/photo-1519852476561-ec618b0183ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=856&q=80", alt="",width="330" height="200") 
+          button#fir(onclick='myFunction()') WaterSport
+          button#sec(onclick='myFunction1()') WaterPark
+          br
+          |Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente 
         div.card
           p 
           | Watch Aurora Boralisis
           img.mage(src="https://images.unsplash.com/photo-1556634202-129a046351c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", alt="",width="330" height="200") 
+          button#fir(onclick='myFunction()') NorthPole
+          button#sec(onclick='myFunction1()') Southpole
+          br
+          |Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente 
         div.card
           p 
           | View from Moon
           img.mage(src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", alt="",width="330" height="200") 
+          button#fir(onclick='myFunction()') OuterSpace
+          button#sec(onclick='myFunction1()') OuterGalaxy
+          br
+          |Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente 
        
 
     footer#footer
