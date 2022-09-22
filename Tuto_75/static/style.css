@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 html {
     scroll-behavior: smooth;
-  }
+}
 
 *{
     font-family: 'Oswald', sans-serif;
@@ -16,7 +16,6 @@ html {
 
 h1{
     background-color: yellowgreen;
-    
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .flex-container {
@@ -42,7 +41,7 @@ li a{
 }
 
 #intro{
-    height: 689px;
+    height: 693px;
     opacity: 0.8;
     display: flex;
     justify-content: center;

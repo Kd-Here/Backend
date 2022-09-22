@@ -1,0 +1,41 @@
+//-  We are learning about template inheritance : Template inheritance allows you to build a base “skeleton” template that contains all the common elements of your site and defines blocks that child templates can override. Sounds complicated but is very basic. It's easiest to understand it by starting with an example.
+//- Here we creating contact form which will have same header and footer only middle content will change
+//- It's same as flask template engine jinija where you created layout.html and other by extending it
+doctype html
+html
+  head
+    title Travel with Us
+    script(src="https://cdn.tailwindcss.com")
+    block scripts
+    
+    //- This style will be for all child and parent page
+    style
+        include ../static/style.css 
+        block style
+
+    //- Here include property for child accordingly check home vs contact block style
+      
+  body
+    nav#navbar
+        ul.flex-container
+          div#logo
+              img(src='/static/logo2.png')
+          each val in ["Home", "About Us", "Travel Plans", "Planets"]
+            // #[] this is called tag interpolation check in docs
+            li #[a(href="/") #{val}]
+                //- Take care of indentation while using pug tremplate inheritance
+        block content
+        //- Here you can add any different content depending on file requirement if u in contact form body content will have html of form
+        //- if you in singup form body content will be of html singup page -//
+
+        footer#de
+            | Copyright © 2019 Kdhere | All Rights Reserved
+
+
+
+
+
+
+
+
+    

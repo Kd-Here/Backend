@@ -13,8 +13,21 @@ app.set('views',path.join(__dirname, 'views')) //Set the views directory to acce
 
 app.get('/', (req, res) => {
   const para = { }
-  res.status(200).render('index.pug')
+  res.status(200).render('home.pug')
   })
+
+// ----------------------------------------Template Inheritance ahead---------------------------------------------
+//To check common layout what child pages will get  
+app.get('/Common_layout', (req, res) => {
+  const para = { }
+  res.status(200).render('layout.pug')
+  })
+
+app.get('/contact', (req, res) => {
+  const para = { }
+  res.status(200).render('contact.pug')
+  })
+
 
 app.listen(port,()=>{
     console.log(`The app is running smoothly on ${port}`);
