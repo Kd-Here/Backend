@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "mongoose": "^6.6.3",
     "nodemon": "^2.0.19"
-  }
+  },
+  "name": "backend",
+  "description": "Learn Nodejs for Backend Done\r Now learning Mongodb intergration for backend",
+  "version": "1.0.0",
+  "main": "first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kd-Here/Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kd-Here/Backend/issues"
+  },
+  "homepage": "https://github.com/Kd-Here/Backend#readme"
 }
