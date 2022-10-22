@@ -7,6 +7,7 @@ html
     title Travel with Us
     script(src="https://cdn.tailwindcss.com")
     block scripts
+      script(src='/static/index.js')
     
     //- This style will be for all child and parent page
     style
@@ -21,8 +22,9 @@ html
           div#logo
               img(src='/static/logo2.png')
           each val in ["Home", "About Us", "Travel Plans", "Planets"]
-            // #[] this is called tag interpolation check in docs
-            li #[a(href="/") #{val}]
+            li #[a(href=`${val}`) #{val}]
+                // #[] this is called tag interpolation check in docs
+                //- Thisn #{val} is for setting our pages nav bar according list items
                 //- Take care of indentation while using pug tremplate inheritance
         block content
         //- Here you can add any different content depending on file requirement if u in contact form body content will have html of form

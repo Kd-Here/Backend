@@ -23,11 +23,15 @@ app.get('/Common_layout', (req, res) => {
   res.status(200).render('layout.pug')
   })
 
-app.get('/contact', (req, res) => {
-  const para = { }
-  res.status(200).render('contact.pug')
-  })
-
+  
+  app.get('/Travel%20Plans', (req, res) => {
+    const para = { }
+    res.status(200).render('contact.pug')
+    })
+  app.get('/Home', (req, res) => {
+    const para = { }
+    res.status(200).render('contact.pug')
+    })
 
 app.listen(port,()=>{
     console.log(`The app is running smoothly on ${port}`);
