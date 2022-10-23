@@ -1,15 +1,24 @@
 const express = require('express')
 const path = require('path')
+const bodyparser = require('body-parser')  //It is responsible for parsing the incoming It is responsible for parsing the incoming
+
+
 
 // This is for setting up node js with mongoose
 const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 
+
+
+
 async function main() {
-  await mongoose.connect('mongodb://localhost/contactforTravelPlans');
+  await mongoose.connect('mongodb://localhost/contactforTravelPlans',{useNewUrlParser:true});
   
   // use `await mongoose.connect('mongodb://user:password@localhost/test');` if your database has auth enabled
 }
+
+
+
 //Defining mongoose schema
 const TravelPlans = new mongoose.Schema({
   name: String,
@@ -19,7 +28,7 @@ const TravelPlans = new mongoose.Schema({
   PhoneNumber: Number
 });
 // Creating a model
-const Travelchats = mongoose.model('FirstConnections', TravelPlans);
+const Travelchats = mongoose.model('Travelchats', TravelPlans);
 
 
 
@@ -33,6 +42,9 @@ app.set('view engine', 'pug') // register the template engine
 app.set('views',path.join(__dirname, 'views')) //Set the views directory to access from anywhere
 
 
+// / Body-parser middleware
+// app.use(bodyparser.urlencoded({extended:false}))
+// app.use(bodyparser.json())
 
 app.get('/', (req, res) => {
   const para = { }
@@ -55,12 +67,16 @@ app.get('/Common_layout', (req, res) => {
 
 
 
-// For post mssg
+// For post mssg https://www.jenniferbland.com/saving-data-to-mongodb-database-from-node-js-application-tutorial/#:~:text=Saving%20data%20to%20database&text=To%20save%20the%20data%20into,a%20save%20to%20the%20database.
   
-app.post("/contact", function(req, res) {
-    const con = ' This is our PUG we are uisng it for template rendering'
-    const params ={'titile':'PugB is best game','info': con}
-    res.status(200).render('home.pug',params)
+app.post("/contact", (req, res)=>{
+    var myData = new Travelchats(req.body);
+    myData.save().then(()=>{
+      res.send("THis item has been saved to the database")
+    }).catch(()=>{
+      res.status(400).send("Item was not saved to database")
+    })
+        res.status(200).render('Result.pug')
 });
 
 app.get('/Travel%20Plans', (req, res) => {
